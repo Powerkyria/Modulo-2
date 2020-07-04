@@ -1,5 +1,5 @@
 "use strict";
 
-const myAdress = 'esta_es_mi_direccion';
+const myAdress = 'esta es mi direccion';
 
-const herAdress = 'la_direccion_de_mi_compañera';
+const herAdress = 'la direccion de mi compañera';
