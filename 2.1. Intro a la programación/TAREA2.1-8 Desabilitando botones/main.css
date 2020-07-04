@@ -1,0 +1,11 @@
+.aceptar, 
+.declinar{
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: blue;
+    color: bisque;
+}
+
+.off{
+    opacity: 0.2;
+}
