@@ -2,18 +2,18 @@
 
 // a)
 
-const numbers = [ 2, 3, 8, 6, 10 ];
+const numbers = [ 2, 3, 8, 7, 10];
 
 let acc = 0;
 
 for (let i = 0; i < numbers.length; i++) {
-	acc += numbers[i] / 5;
+	acc += numbers[i] / numbers.length;
 }
 
 console.log(acc);
 
 // RECUERDA
-// acc += numbers[i] es igual a poner acc = acc + numbers[i]
+// acc += numbers[i] es igual que poner acc = acc + numbers[i]
 
 // b)
 
@@ -22,7 +22,7 @@ numbers[5] = 11;
 let acc2 = 0;
 
 for (let i = 0; i < numbers.length; i++) {
-	acc2 += numbers[i] / 6;
+	acc2 += numbers[i] / numbers.length;
 }
 
 console.log(acc2);
@@ -33,9 +33,9 @@ let acc3 = 0;
 
 function average(numbers) {
 	for (let i = 0; i < numbers.length; i++) {
-		acc3 += numbers[i] / 5;
+		acc3 += numbers[i] / numbers.length;
 	}
 	return acc3;
 }
 
-console.log(average([ 2, 3, 8, 6, 10 ]));
+console.log(average(numbers));
