@@ -16,7 +16,7 @@ const adalaber2 = {
 	job: 'actriz'
 };
 
-// PINTADO EN LA WEB
+// PINTADO EN EL HTML
 
 // Mostramos información en el HTML
 // Voy a poner las descripciones de los objetos en el innerHTML del elemento div con clase "description"
