@@ -1,7 +1,7 @@
 "use strict";
 
-const cena = (128 - 2) / 9;
-const ana = cena + 2;
+const dinner = (128 - 2) / 9;
+const ana = dinner + 2;
 
-console.log(cena);
+console.log(dinner);
 console.log(ana);

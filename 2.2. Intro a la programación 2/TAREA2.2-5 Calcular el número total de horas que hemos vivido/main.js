@@ -1,8 +1,8 @@
 "use strict";
 
-const horasAño = 24 * 365;
-const edad = 34;
+const hoursYear = 24 * 365;
+const age = 34;
 
-const horasDeVida = horasAño * edad;
+const hoursOfLife = hoursYear * age;
 
-console.log(horasDeVida);
+console.log(hoursOfLife);

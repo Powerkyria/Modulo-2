@@ -1,9 +1,9 @@
 "use strict";
 
 const kiwis = 2 * 5;
-const peras = 3 * 2;
-const uvas = 0.5 * 4;
+const pears = 3 * 2;
+const grapes = 0.5 * 4;
 
-const suma = kiwis + peras + uvas;
+const sum = kiwis + pears + grapes;
 
-console.log(suma);
+console.log(sum);

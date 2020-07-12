@@ -20,7 +20,7 @@ function number() {
 // Función de números pares e impares, declarando dentro la
 // función anterior, condiciones y cambio de color de fondo
 
-function parImpar() {
+function evenOdd() {
 	const result = number();
 
 	if (result % 2 === 1) {
@@ -33,7 +33,7 @@ function parImpar() {
 
 function allFunctions() {
 	state();
-	parImpar();
+	evenOdd();
 }
 
 button.addEventListener('click', allFunctions);

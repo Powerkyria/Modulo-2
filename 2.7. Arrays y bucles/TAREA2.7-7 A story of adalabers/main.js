@@ -43,9 +43,9 @@ let edadMedia = 0;
 
 function averageAge() {
 	for (let i = 0; i < contacts.length; i++) {
-		edadMedia += contacts[i].age;
+		edadMedia += contacts[i].age/ contacts.length;
 	}
-	return edadMedia / contacts.length;
+	return edadMedia;
 }
 
 console.log(averageAge());
