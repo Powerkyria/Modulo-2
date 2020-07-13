@@ -1,71 +1,96 @@
-describe("3. Loops and Array", function(){
+describe('3. Loops and Array', function() {
+	it('Array', function() {
+		let array = [];
+		array[0] = 'bananas';
+		array[1] = 'pineapple';
+		array[2] = Array.isArray(array); /*XD*/
+		array[3] = 'fruit juice';
 
-    it("Array", function(){
-        let array = [];
-        array[0] = "bananas";
-        array[1] = "pineapple";
-        array[2] = Array.isArray(array); /*XD*/
-        array[3] = "fruit juice";
+		assert.equal(array[2], true);
+	});
 
-        assert.equal(array[2], true);
-    });
+	it('Array length', function() {
+		let array = [ 'bananas', 'pineapple' ];
 
-    it("Array length", function(){
-        let array = ["bananas","pineapple"];
+		assert.equal(array.length, 2);
+	});
 
-        assert.equal(array.length, 2);
-    });
+	it('Pop', function() {
+		let array = [
+			'table',
+			'bed',
+			'chair',
+			'tv',
+			'mirror',
+			'window',
+			'door',
+			'watch',
+			'lamp',
+			'blanquet',
+			'closet'
+		];
 
-    it("Pop", function(){
-        let array = ["table","bed","chair","tv","mirror","window","door","watch","lamp","blanquet","closet"];
+		array.pop();
 
-        array.pop();
+		assert.equal(array.length, 10);
+	});
 
-        // mmm... magia negra! xq dice que hay 10 cuando hay 11?
+	it('1Push ', function() {
+		// You can change the assert
+		let array = [ 'table', 'bed', 'sofa' ];
 
-        assert.equal(array.length, 10);
-    });
+		array.push('wardrove');
 
-    it("Push ", function(){
-        let array = [];
+		assert.equal(array.length, 4);
+	});
 
-        // array.push("wardrove");
+	it('2Push ', function() {
+		let array = [];
 
+		// array.push("wardrove");
 
-        assert.equal(array.length, 0);
-    });
+		assert.equal(array.length, 0);
+	});
 
-    it("position array", function(){
-        let array = ["bananas","pineapple","pear","orange"];
-        array.pop();
-        array.push("pear");
-        array.push("orange");
+	it('1position array', function() {
+		let array = [ 'bananas', 'pineapple', 'water melon' ];
+		array.pop();
+		array.push('pear');
+		array.push('orange');
 
-        let result = array[4];
+		let result = array[3];
 
-        //pero si quité una y añadí dos,por indice orange es la 3 no la 4, me sigue contando la que quité?
+		assert.equal(result, 'orange');
+	});
 
-        assert.equal(result, "orange");
-    });
+	it('2position array', function() {
+		let array = [ 'bananas', 'pineapple', 'pear', 'orange' ];
+		array.pop();
+		array.push('pear');
+		array.push('orange');
 
+		let result = array[4];
 
-    it("Loop, For", function(){
-        let lastGenerateMessage = "";
-        for(let i = 0; i <=3; i++){
-            lastGenerateMessage = "Walking east "+i+" step";
-        }
+		assert.equal(result, 'orange');
+	});
 
-        assert.equal(lastGenerateMessage, "Walking east 3 step");
-    });
+	it('Loop, For', function() {
+		let lastGenerateMessage = '';
+		for (let i = 0; i <= 3; i++) {
+			lastGenerateMessage = 'Walking east ' + i + ' step';
+		}
 
-    it("Loop, While", function(){
-        let lastGenerateMessage = "";
-        let steps = -1;
-        while(steps <0){
-            steps = steps + 1;
-            lastGenerateMessage = 'Walking east '+steps+' step';
-        }
+		assert.equal(lastGenerateMessage, 'Walking east 3 step');
+	});
 
-        assert.equal(lastGenerateMessage, "Walking east 0 step");
-    });
+	it('Loop, While', function() {
+		let lastGenerateMessage = '';
+		let steps = -1;
+		while (steps < 0) {
+			steps = steps + 1;
+			lastGenerateMessage = 'Walking east ' + steps + ' step';
+		}
+
+		assert.equal(lastGenerateMessage, 'Walking east 0 step');
+	});
 });
