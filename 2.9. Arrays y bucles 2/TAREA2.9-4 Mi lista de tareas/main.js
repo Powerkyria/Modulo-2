@@ -36,6 +36,4 @@ for (let i = 0; i < tasks.length; i++) {
 
 // 4.Permitir marcar una tarea como 'completa' o 'incompleta'.
 
-
-
-// 4. Permitir marcar una tarea como 'completa' o 'incompleta'.
+// document.body.innerHTML = "<input type='checkbox'></input>"
