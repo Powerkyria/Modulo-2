@@ -23,17 +23,18 @@ for (let i = 0; i < tasks.length; i++) {
 }
 
 // 3. Tachar las ya realizadas.
+// 4.Permitir marcar una tarea como 'completa' o 'incompleta'.
 
 const listItems = document.querySelectorAll('li');
+const checkboxTrue = '<input type="checkbox" checked>'
+const checkboxFalse = '<input type="checkbox">'
 
 for (let i = 0; i < tasks.length; i++) {
 	if (tasks[i].completed === true) {
-		listItems[i].classList.add('completed');
+		(listItems[i].classList.add('completed')) || (listItems[i].innerHTML += checkboxTrue);
+
 	} else{
-		listItems[i].classList.remove('completed');
+		(listItems[i].classList.remove('completed')) || (listItems[i].innerHTML += checkboxFalse);
 	}
 }
 
-// 4.Permitir marcar una tarea como 'completa' o 'incompleta'.
-
-// document.body.innerHTML = "<input type='checkbox'>"
