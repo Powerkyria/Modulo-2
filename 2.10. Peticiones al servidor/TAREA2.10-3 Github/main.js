@@ -3,7 +3,7 @@
 const name = document.querySelector('.userName');
 const repos = document.querySelector('.repoNumber');
 const img = document.querySelector('img');
-
+const btn = document.querySelector('button');
 
 function getGithubUser() {
   let data = document.querySelector('input').value;
@@ -16,5 +16,5 @@ function getGithubUser() {
 		img.alt = 'Avatar';
 	});
 }
-const btn = document.querySelector('button');
+
 btn.addEventListener('click', getGithubUser);
