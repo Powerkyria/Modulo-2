@@ -37,7 +37,7 @@ for (let i = 0; i < tasks.length; i++) {
 	}
 }
 
-//Una vez añadidos los checkbox en el html ya los podemos meter en una constante
+//Una vez añadidos los checkbox en el html ya los podemos meter en una variable.
 
 const inputs = document.querySelectorAll('input');
 
