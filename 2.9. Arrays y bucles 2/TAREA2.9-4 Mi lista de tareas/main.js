@@ -37,7 +37,7 @@ for (let i = 0; i < tasks.length; i++) {
 	}
 }
 
-//Una vez añadidos los checkbox en el html ya los podemos meter en una variable.
+//Una vez añadidos los checkbox en el html ya los podemos recuperar del document y meterlo en una variable.
 
 const inputs = document.querySelectorAll('input');
 
@@ -57,7 +57,7 @@ function updateStatus() {
 		}
 	}
 
-	// d) Tareas totales. Cada vez que una tarea se marque/desmarque deberiamos actualizar esta información.
+	// d) Tareas totales. Cada vez que una tarea se marque/desmarque deberíamos actualizar esta información.
 
 	let message = document.querySelector('.message');
 
@@ -73,5 +73,5 @@ for (let i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('change', updateStatus);
 }
 
-// LLamamos a la funcion para que actualice el mensaje
+// LLamamos a la función para que actualice el mensaje
 updateStatus();
