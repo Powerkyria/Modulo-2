@@ -3,9 +3,10 @@
 const name = document.querySelector('.userName');
 const repos = document.querySelector('.repoNumber');
 const img = document.querySelector('img');
-const data = document.querySelector('input').value;
+
 
 function getGithubUser() {
+  let data = document.querySelector('input').value;
   fetch(`https://api.github.com/users/${data}`)
   .then((response) => response.json())
   .then((data) => {
