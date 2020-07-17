@@ -28,7 +28,6 @@ for (let i = 0; i < tasks.length; i++) {
 const listItems = document.querySelectorAll('li');
 const checkboxTrue = '<input type="checkbox" checked>';
 const checkboxFalse = '<input type="checkbox">';
-const inputs = document.querySelectorAll('input');
 
 for (let i = 0; i < tasks.length; i++) {
 	if (tasks[i].completed === true) {
@@ -38,39 +37,41 @@ for (let i = 0; i < tasks.length; i++) {
 	}
 }
 
-// APARTIR DE AQUI NO FUNCIONA 
+//Una vez añadidos los checkbox en el html ya los podemos meter en una constante
+
+const inputs = document.querySelectorAll('input');
 
 //c) Cuando el usuario marque la tarea como completada marcando el checkbox, deben suceder varias cosas:
 
 // la tarea debe mostrarse como completada (tachada)
 // debemos modificar su estado (propiedad completed) en el array tasks.
 
-// function updateStatus() {
-// 	for (let i = 0; i < inputs.length; i++) {
-// 		if (inputs[i].checked === true) {
-// 			listItems[i].classList.add('completed');
-// 			tasks[i].completed = true;
-// 		} else {
-// 			listItems[i].classList.remove('completed');
-// 			tasks[i].completed = false;
-// 		}
-// 	}
-// 	// d) Tareas totales.Cada vez que una tarea se marque/desmarque deberiamos actualizar esta información.
+function updateStatus() {
+	for (let i = 0; i < inputs.length; i++) {
+		if (inputs[i].checked === true) {
+			listItems[i].classList.add('completed');
+			tasks[i].completed = true;
+		} else {
+			listItems[i].classList.remove('completed');
+			tasks[i].completed = false;
+		}
+	}
 
-// 	//NO FUNCIONA
+	// d) Tareas totales. Cada vez que una tarea se marque/desmarque deberiamos actualizar esta información.
 
-// 	let message = document.querySelector('.message');
+	let message = document.querySelector('.message');
 
-// 	let completedTasks = document.querySelectorAll('input:checked').length;
+	let completedTasks = document.querySelectorAll('input:checked').length;
 
-// 	let incompleteTasks = parseInt(tasks.length) - parseInt(completedTasks);
+	let incompleteTasks = parseInt(tasks.length) - parseInt(completedTasks);
 
-// 	// Actualizamos mensaje
-// 	message.innerHTML = `Tienes ${tasks.length} tareas. ${completedTasks} completadas y ${incompleteTasks} por realizar.`;
-// }
+	// Actualizamos mensaje
+	message.innerHTML = `Tienes ${tasks.length} tareas. ${completedTasks} completadas y ${incompleteTasks} por realizar.`;
+}
 
-// for (let i = 0; i < inputs.length; i++) {
-// 	inputs[i].addEventListener('change', updateStatus);
-// }
+for (let i = 0; i < inputs.length; i++) {
+	inputs[i].addEventListener('change', updateStatus);
+}
 
-// updateStatus();
+// LLamamos a la funcion para que actualice el mensaje
+updateStatus();
