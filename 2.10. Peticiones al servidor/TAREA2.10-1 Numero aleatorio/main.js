@@ -1,3 +1,5 @@
+'use strict';
+
 function getNumber() {
     fetch("https://api.rand.fun/number/integer")
       .then(response => response.json())

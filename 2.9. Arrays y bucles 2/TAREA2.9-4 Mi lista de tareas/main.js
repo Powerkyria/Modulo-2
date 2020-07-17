@@ -12,11 +12,11 @@ const tasks = [
 
 // 1. Mostrar una frase que indique cuántas tareas hay.
 
-document.body.innerHTML = `<h1>Mi lista de tareas</h1><p>Numero de tareas: ${tasks.length}</p><ul class='list'></ul>`;
+document.body.innerHTML = `<h1>Mi lista de tareas</h1><p>Número de tareas: ${tasks.length}</p><p class='message'></p><ul class='list'></ul>`;
 
 // 2. Pintar todas las tareas en pantalla.
 
-let list = document.querySelector('.list');
+const list = document.querySelector('.list');
 
 for (let i = 0; i < tasks.length; i++) {
 	list.innerHTML += `<li>${tasks[i].name}</li>`;
@@ -26,15 +26,51 @@ for (let i = 0; i < tasks.length; i++) {
 // 4.Permitir marcar una tarea como 'completa' o 'incompleta'.
 
 const listItems = document.querySelectorAll('li');
-const checkboxTrue = '<input type="checkbox" checked>'
-const checkboxFalse = '<input type="checkbox">'
+const checkboxTrue = '<input type="checkbox" checked>';
+const checkboxFalse = '<input type="checkbox">';
+const inputs = document.querySelectorAll('input');
 
 for (let i = 0; i < tasks.length; i++) {
 	if (tasks[i].completed === true) {
-		(listItems[i].classList.add('completed')) || (listItems[i].innerHTML += checkboxTrue);
-
-	} else{
-		(listItems[i].classList.remove('completed')) || (listItems[i].innerHTML += checkboxFalse);
+		listItems[i].classList.add('completed') || (listItems[i].innerHTML += checkboxTrue);
+	} else {
+		listItems[i].classList.remove('completed') || (listItems[i].innerHTML += checkboxFalse);
 	}
 }
 
+// APARTIR DE AQUI NO FUNCIONA 
+
+//c) Cuando el usuario marque la tarea como completada marcando el checkbox, deben suceder varias cosas:
+
+// la tarea debe mostrarse como completada (tachada)
+// debemos modificar su estado (propiedad completed) en el array tasks.
+
+// function updateStatus() {
+// 	for (let i = 0; i < inputs.length; i++) {
+// 		if (inputs[i].checked === true) {
+// 			listItems[i].classList.add('completed');
+// 			tasks[i].completed = true;
+// 		} else {
+// 			listItems[i].classList.remove('completed');
+// 			tasks[i].completed = false;
+// 		}
+// 	}
+// 	// d) Tareas totales.Cada vez que una tarea se marque/desmarque deberiamos actualizar esta información.
+
+// 	//NO FUNCIONA
+
+// 	let message = document.querySelector('.message');
+
+// 	let completedTasks = document.querySelectorAll('input:checked').length;
+
+// 	let incompleteTasks = parseInt(tasks.length) - parseInt(completedTasks);
+
+// 	// Actualizamos mensaje
+// 	message.innerHTML = `Tienes ${tasks.length} tareas. ${completedTasks} completadas y ${incompleteTasks} por realizar.`;
+// }
+
+// for (let i = 0; i < inputs.length; i++) {
+// 	inputs[i].addEventListener('change', updateStatus);
+// }
+
+// updateStatus();
