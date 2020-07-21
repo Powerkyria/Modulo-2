@@ -2,8 +2,8 @@
 
 function getNumber() {
 	fetch('https://api.rand.fun/number/integer')
-		.then((response) => response.html())
-		.then((data) => {
+		.then(response => response.html())
+		.then(data => {
 			const paragraph = document.querySelector('.result');
 			paragraph.innerHTML = data.result;
 		})
