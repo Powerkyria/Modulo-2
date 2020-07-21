@@ -4,7 +4,7 @@ function getNumber() {
     fetch("https://api.rand.fun/number/integer")
       .then(response => response.json())
       .then(data => {
-        document.querySelector('.js-result').innerHTML = data.result
+        document.querySelector('.result').innerHTML = data.result
       });
   }
-  document.querySelector('.js-number').addEventListener("click", getNumber);
+  document.querySelector('.number').addEventListener("click", getNumber);
