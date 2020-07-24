@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        line-height: 28px;
+        margin: 50px;
+        font-family: sans-serif;
+    }
+
+    li {
+        font-weight: bold;
+        color: darkblue;
+    }
+</style>
+
+<body>
+
+    <h2>Ejercicio 1</h2>
+
+    <p>Identifica la siguiente información sobre SWAPI:</p>
+
+    <ul>
+        <li> La URL base del API</li>
+
+        - https://swapi.dev/api/
+
+        <li> Si necesita autenticación</li>
+
+        - No.
+
+        <li> Método HTTP que deben usar las peticiones a este API</li>
+
+        - GET.
+
+        <li> URL para acceder a la info del personaje "Luke Skywalker"</li>
+
+        - http https://swapi.dev/api/people/1/
+
+        <li> URL para acceder a la info de la película "A New Hope"</li>
+
+        - http https://swapi.dev/api/films/1/
+
+        <li> A qué otros recursos puedo acceder desde el API además de personajes y pelis</li>
+
+        - Planets, species, starships, vehicles.
+
+        <li>URL para acceder al listado de personajes, ¿está paginada?</li>
+
+        - "people": "https://swapi.dev/api/people/", <br>
+        - Si: https://swapi.dev/api/people/?pages=1
+
+        <li>Cómo puedo buscar personajes mediante la URL</li>
+
+        - Agregando a la URL base: <br>
+
+        /people/ - Para obtener todos los recursos humanos. <br>
+        /people/:id/ - Para obtener un recurso de personas específico.
+
+        <li> Cómo puedo hacer que el JSON de una petición se me devuelva traducido a Wookiee</li>
+
+        - Agregando "?format=wookie" a la URL: <br>
+
+        https://swapi.dev/api/planets/1/?format=wookiee
+    </ul>
+
+</body>
+
+</html>
