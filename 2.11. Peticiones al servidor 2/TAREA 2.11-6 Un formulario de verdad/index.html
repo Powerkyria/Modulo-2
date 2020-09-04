@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -20,22 +16,23 @@
         <fieldset>
 
             <legend>Datos personales</legend>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" class="name">
+            </div>
 
-            <label for="name">Nombre</label>
-            <input type="text" id="name" class="name">
-            <br>
-            <br>
-            <label for="surname">Apellido</label>
-            <input type="text" id="surname" class="surname">
-
+            <div>
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" class="surname">
+            </div>
         </fieldset>
-
-        <br>
 
         <button>Enviar</button>
 
-        <p class="text"></p>
-        
+        <i>
+            <p class="text"></p>
+        </i>
+
     </form>
     <script src="main.js"></script>
 </body>
