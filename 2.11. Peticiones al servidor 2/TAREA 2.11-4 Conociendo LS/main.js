@@ -17,9 +17,3 @@ function getName(){
 }
 
 getName();
-
-// Escribiendo solo esto tb funciona:
-
-// const keep = localStorage.getItem('name');
-// text.innerHTML = keep;
-// input.value = keep;
