@@ -25,7 +25,12 @@ function writeText() {
 
 form.addEventListener('keyup', writeText);
 
-//Obtengo el objeto guardado en el LS y lo paso a cadena para pintarlos en el formulario
+// 1.Obtengo el objeto guardado en el LS y lo paso a cadena para pintarlos en el formulario
+
+// Borraremos el valor del localStorage a través de las DevTools. Con el localStorage limpito, recargaremos la página para simular la primera visita de la usuaria, dónde aun no habría información sobre el nombre guardada (cacheada).
+// Si al realizar esta acción nos encontramos algún error tenemos que apañarlo
+
+// 2.Soluciónamos el error:
 
 function getName() {
 	if (localStorage.getItem('data') !== null) {
