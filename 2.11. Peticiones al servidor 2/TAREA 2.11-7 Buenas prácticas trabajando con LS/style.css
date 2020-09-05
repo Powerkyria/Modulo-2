@@ -1,0 +1,23 @@
+body {
+	margin: 30px;
+	box-sizing: border-box;
+}
+
+fieldset {
+	display: inline;
+	padding: 20px;
+	border-color: blueviolet;
+}
+
+label {
+	margin-right: 3px;
+}
+
+button {
+	display: block;
+	margin-top: 18px;
+}
+
+div:first-of-type {
+	margin-bottom: 12px;
+}
