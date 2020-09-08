@@ -21,5 +21,6 @@ function getScroll() {
 		}
 	}
 }
+getScroll();
 
-links[i].addEventListener('click', getScroll);
+// links[i].addEventListener('click', getScroll);
