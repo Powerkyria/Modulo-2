@@ -4,12 +4,11 @@
 
 const modal = document.querySelector('.modal');
 
-const message = document.querySelector('p')
+const message = document.querySelector('p');
 
-	const showModal = () => {
-		message.innerHTML= 'Su sesión ha expirado'
-		modal.classList.remove('hidden');
-	};
+const showModal = () => {
+	message.innerHTML = 'Su sesión ha expirado';
+	modal.classList.remove('hidden');
+};
 
-	setTimeout(showModal, 15000);
-
+setTimeout(showModal, 15000);
