@@ -4,6 +4,8 @@
 // La cuenta se mostrará en la pantalla con números y si lo deseas puedes añadir una imagen de una uva cada vez que pase un segundo.
 // PISTA: la función se puede seguir ejecutando con setInterval pero para que se pare en 12 basta con dejar de pintar en el HTML en el momento adecuado.
 
+const img = document.querySelector('img');
+
 let counter = 0;
 
 const incrementAndShowCounter = () => {
@@ -11,19 +13,12 @@ const incrementAndShowCounter = () => {
 	const time = document.querySelector('.time');
 	time.innerHTML = counter;
 
+	img.src = './image/uvas.jpg';
+	// ARREGLAR PARA QUE SEA UNA IMAGEN CADA SEGUNDO
 	if (counter === 12) {
 		clearInterval(intervalo);
+		img.src = './image/feliz.gif';
 	}
 };
 
 let intervalo = setInterval(incrementAndShowCounter, 1000);
-
-/******************************************/
-
-// FALTA PONER LA IMAGEN
-
-
-// const img = document.querySelector('img');
-// const count = document.querySelector('.time');
-
-
