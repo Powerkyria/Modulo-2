@@ -12,4 +12,4 @@ const showModal = () => {
 	overlay.style.opacity = 1;
 };
 
-setTimeout(showModal, 5000);
+setTimeout(showModal, 15000);
