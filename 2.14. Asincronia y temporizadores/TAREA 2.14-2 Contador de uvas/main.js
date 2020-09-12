@@ -11,14 +11,17 @@ let counter = 0;
 const incrementAndShowCounter = () => {
 	counter++;
 	const time = document.querySelector('.time');
+
 	time.innerHTML = counter;
 
 	img.src = './image/uvas.jpg';
+
 	// ARREGLAR PARA QUE SEA UNA IMAGEN CADA SEGUNDO
+
 	if (counter === 12) {
-		clearInterval(intervalo);
 		img.src = './image/feliz.gif';
+		time.remove();
 	}
 };
 
-let intervalo = setInterval(incrementAndShowCounter, 1000);
+setInterval(incrementAndShowCounter, 1000);
