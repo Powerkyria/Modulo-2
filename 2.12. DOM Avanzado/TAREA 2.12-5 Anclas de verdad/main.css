@@ -1,37 +1,39 @@
-*{
-  margin:0;
-  padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background-color: aliceblue;
-  }
-  
-  header {
-  background-color: black;
-  color: white;
-  position: fixed;
-  width: 100%;
-  }
-  
-  nav {
-    margin: 15px;
-  }
+	background-color: aliceblue;
+}
 
-  li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    margin: 15px;
-    border: 3px solid white;
-    cursor: pointer;
-  }
+header {
+	background-color: black;
+	color: white;
+	position: fixed;
+	width: 100%;
+}
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
+nav {
+	margin: 15px;
+}
 
-  main{
-    padding-top: 130px;
-  }
+li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+	margin: 15px;
+	border: 3px solid white;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+main {
+  padding-top: 130px;
+  margin: 0 50px;
+}
