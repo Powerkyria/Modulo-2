@@ -1,0 +1,14 @@
+body {
+	line-height: 1.6;
+	margin-left: 20px;
+	margin-bottom: 25px;
+}
+
+a {
+	display: block;
+	width: max-content;
+}
+
+a:hover {
+	color: #000;
+}
