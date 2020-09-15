@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	background-image: url(./bart.gif);
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	color: #fff;
+	font-family: bart;
+	font-size: 17px;
+}
+
+@media all and (min-width: 320px) {
+	body {
+		grid-template-columns: 100%;
+		margin: 16px;
+	}
+}
+
+@media all and (min-width: 768px) {
+	body {
+		grid-template-columns: 45% 45%;
+		margin: 22px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	body {
+		grid-template-columns: 28% 28% 28%;
+		margin: 37px;
+	}
+}
+
+@font-face {
+	font-family: 'bart';
+	src: url('./JuniorprinceRegular-DOJ71.otf');
+}
+
+select {
+	margin-left: 12px;
+}
