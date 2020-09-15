@@ -1,6 +1,6 @@
 'use strict';
 
-// Vamos a realizar un temporizador que empiece en 0 y cada 2 segundos se incremente.
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_14_asincronia#ejercicio-1
 
 let counter = 0;
 

@@ -1,5 +1,7 @@
 'use strict';
 
+//Ejercicio de un ejemplo
+
 // Cuando se resuelve la promesa de un fetch en esta nos llega información, uno de los datos es la propiedad 'ok'. Esta es true si el código de respuesta es de tipo 200, en caso contrario es false. Una práctica extendida es cuando el valor de 'ok' es falso generar una excepción con throw, ya que cuando hacemos esto dentro de un then() en lugar de ejecutarse el siguiente then() se ejecuta catch()
 
 // fetch('https://api.github.com/repositories?since=asdf')

@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_6_objetos#ejercicio-2
+
 const adalaber1 = {
 	name: 'Susana',
 	age: 34,

@@ -1,6 +1,6 @@
 'use strict';
 
-// Como en el ejemplo anterior vamos a averiguar quién ha ganado usando reduce, pero queremos saber el ganador de los estudiantes, por lo que tendremos que filtrar primero quiénes lo son.
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_13_metodos_funcionales_array#ejercicio-9
 
 const runners = [
 	{ name: 'Gregory Goyle', time: 56, student: true },

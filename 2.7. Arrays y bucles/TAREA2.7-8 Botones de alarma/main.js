@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_7_arrays_y_bucles#ejercicio-8
+
 const buttons = document.querySelectorAll('button');
 
 function alarm() {

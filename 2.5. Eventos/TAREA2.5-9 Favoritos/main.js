@@ -1,5 +1,7 @@
 'use strict;';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_5_eventos#ejercicio-9
+
 const isra = document.querySelector('.teacher--isra');
 const tuerto = document.querySelector('.teacher--tuerto');
 const nasi = document.querySelector('.teacher--nasi');

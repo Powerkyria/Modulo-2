@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_9_array_y_bucles_2#ejercicio-4
+
 const tasks = [
 	{ name: 'Recoger setas en el campo', completed: true },
 	{ name: 'Comprar pilas', completed: true },

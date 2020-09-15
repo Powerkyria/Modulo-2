@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_7_arrays_y_bucles#ejercicio-1
+
 const movies = [ 'Contratiempo', 'Bala perdida', 'La ola' ];
 
 movies[3] = 'El aviso';

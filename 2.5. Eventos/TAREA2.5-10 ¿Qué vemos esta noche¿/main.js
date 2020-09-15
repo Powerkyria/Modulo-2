@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_5_eventos#ejercicio-10
+
 const inception = 'Inception';
 const theButterFlyEffect = 'The butterfly effect';
 const eternalSunshineOfTheSM = 'Eternal sunshine of the spotless mind';

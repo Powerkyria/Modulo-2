@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_4_funciones#ejercicio-10
+
 function calculator (borderBox, width, padding, borderSize) {
   
   let totalWidth;

@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_12_dom_avanzado#ejercicio-5
+
 const links = document.querySelectorAll('a');
 
 function doScroll(e) {

@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_4_funciones#ejercicio-3
+
 function ticket(price) {
 	const iva = 21 * price / 100;
 	const total = price + iva;

@@ -1,6 +1,6 @@
 'use strict';
 
-// Vamos a modificar nuestra solución del ejercicio 2 para que, en lugar de seguir ejecutando la función indefinidamente, detengamos su ejecución con clearInterval.
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_14_asincronia#ejercicio-5
 
 let counter = 0;
 

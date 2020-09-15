@@ -1,5 +1,9 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_9_array_y_bucles_2#ejercicio-5-bonus
+
+/*******************************************/
+
 // PINTADO EN LA CONSOLA
 
 // Creamos una función que admite un parámetro. Este parámetro equivale a la altura del árbol de navidad

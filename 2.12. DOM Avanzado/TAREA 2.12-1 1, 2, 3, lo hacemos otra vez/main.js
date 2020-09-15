@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_12_dom_avanzado#ejercicio-1
+
 const list = document.querySelector('ul');
 
 const numbers = [ 1, 2, 3 ];

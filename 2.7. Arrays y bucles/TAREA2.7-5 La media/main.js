@@ -1,5 +1,8 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_7_arrays_y_bucles#ejercicio-5
+
+
 // a)
 
 const numbers = [ 2, 3, 8, 7, 10];

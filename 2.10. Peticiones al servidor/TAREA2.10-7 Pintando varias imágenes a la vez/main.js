@@ -1,5 +1,11 @@
 'use strict'
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_10_peticiones_al_servidor#ejercicio-6
+
+// El enlace no esta ajustado al ejercicio
+
+// Partiendo el ejemplo anterior, vamos a modificarlo para que en lugar de pedir 2 imágenes en paralelo pida 10, y el resultado sólo se pinte en la pantalla cuando las 10 imágenes hayan llegado del servidor. Ahora sí que se nota el efecto de que se pintan todas a la vez, ¿verdad? Vamos a probar también con 25 imágenes, para ver bien este efecto.
+
 const createPromise = () =>
   fetch('https://dog.ceo/api/breeds/image/random')
     .then(response => response.json());

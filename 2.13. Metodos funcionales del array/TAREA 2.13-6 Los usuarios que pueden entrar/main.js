@@ -1,6 +1,6 @@
 'use strict';
 
-// Ya hemos conseguido las contraseñas pertenecientes a cada usuario. ¿Podrías darnos un array con los usuarios que pueden acceder a la aplicación, es decir, los que tienen como PIN un número par?
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_13_metodos_funcionales_array#ejercicio-6
 
 const users = [
 	{ name: 'María', isPremium: false, pin: 2389 },

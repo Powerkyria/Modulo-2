@@ -1,6 +1,6 @@
 'use strict';
 
-// Vamos a volver al listado de usuarios del ejercicio 6, porque nos ha dado la manía de tenerlos ordenados. ¿Podrías ordenarlos por orden alfabético?
+//https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_13_metodos_funcionales_array#ejercicio-12
 
 const users = [
 	{ name: 'María', isPremium: false, pin: 2389 },

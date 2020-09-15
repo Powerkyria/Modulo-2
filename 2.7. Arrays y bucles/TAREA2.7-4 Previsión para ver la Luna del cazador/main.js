@@ -1,6 +1,6 @@
 'use strict';
 
-// NOTA: Vamos a realizar este ejercicio de forma que, antes de programar nada, escribamos el un papel el listado de las acciones (algoritmo) que tenemos que realizar para conseguir el resultado que buscamos. Una vez escrito este listado, ya nos pondremos a programarlo en JS.
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_7_arrays_y_bucles#ejercicio-4
 
 // Empezamos en 2020 porque la de 2017 ya pasó y nos interesan las lunas futuras ---> i = 2020;
 // Las lunas aparecerán cada 3 años y queremos calcular 15, entonces: 3 * 15 = 45 + 2020 = 2065,

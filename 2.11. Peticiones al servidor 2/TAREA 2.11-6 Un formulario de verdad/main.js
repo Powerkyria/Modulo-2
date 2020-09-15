@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_11_peticiones_al_servidor_2#ejercicio-6
+
 // NOTA: En localStorage solo podemos guardar datos de tipo primitivo (número, cadena, booleano).
 
 // ¿Qué pasa si queremos guardar un array o un objeto?

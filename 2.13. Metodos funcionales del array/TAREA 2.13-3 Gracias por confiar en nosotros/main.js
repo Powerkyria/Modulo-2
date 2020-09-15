@@ -1,8 +1,6 @@
 'use strict';
 
-// Seguimos desarrollando nuestra aplicación web que romperá el mercado. Pero antes, queremos agradecer a nuestros usuarios premium (de pago) su ayuda en el saludo de la aplicación. Por tanto, a los usuarios premium queremos saludarles así 'Bienvenida Yolanda. Gracias por confiar en nosotros.', y mantener el saludo simple 'Bienvenida Yolanda' para el resto de usuarios.
-// Vamos a partir de este array con el listado de usuarios que incluye tanto su nombre como si son usuarios premium o no.
-// Tenemos que crear un nuevo array con los saludos. ¿Podremos hacerlo con map?
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_13_metodos_funcionales_array#ejercicio-3
 
 const users = [
 	{ name: 'María', isPremium: false },

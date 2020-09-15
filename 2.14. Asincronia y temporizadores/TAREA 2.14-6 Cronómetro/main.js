@@ -1,6 +1,6 @@
 'use strict';
 
-// Crear un cronómetro que vaya aumentando en segundos y cuando se pulse el botón de parar deje de aumentar. Cuando pulsemos el de continuar, vuelva a empezar de nuevo.
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_14_asincronia#ejercicio-6
 
 const stOp = document.querySelector('.stop');
 const start = document.querySelector('.start');

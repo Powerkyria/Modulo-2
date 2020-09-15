@@ -1,5 +1,7 @@
 'use strict;';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_5_eventos#ejercicio-5
+
 function color(event) {
 	const x = event.key;
 

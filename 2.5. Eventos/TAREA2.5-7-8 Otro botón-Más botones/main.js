@@ -1,5 +1,9 @@
 'use strict;';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_5_eventos#ejercicio-7
+
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_5_eventos#ejercicio-8
+
 const buttonOk = document.querySelector('.ok');
 const buttonSend = document.querySelector('.send');
 

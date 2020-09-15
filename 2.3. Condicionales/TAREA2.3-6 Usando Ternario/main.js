@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_3_condicionales#ejercicio-6
+
 let avocados;
 const avocadoPrice = 1.5;
 const money = 33;

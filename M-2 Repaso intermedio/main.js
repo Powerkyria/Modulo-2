@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_repaso-intermedio
+
 const button = document.querySelector('.btn');
 const body = document.querySelector('body');
 const select = document.querySelector('select');

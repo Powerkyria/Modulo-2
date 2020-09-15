@@ -1,6 +1,9 @@
 'use strict';
 
-// a) En nuestra aplicación de gestión de usuarios, nos ha llegado una incidencia asociada al PIN 5232. ¿Podrías encontrar el usuario que corresponde a ese PIN para poder contactarle? Usa el método find para conseguirlo.
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_13_metodos_funcionales_array#ejercicio-10
+
+
+// a)
 
 const users = [
 	{ name: 'María', isPremium: false, pin: 2389 },
@@ -14,7 +17,7 @@ const incidence = users.find((name) => name.pin === 5232);
 
 console.log(incidence);
 
-// // b) Resulta que el usuario se ha dado de baja por la incidencia :( ¿Podrías borrarlo del array de usuarios? Usa el método findIndex para encontrar su posición y bórralo usando splice.
+// // b)
 
 const positionUser = users.findIndex((name) => name.pin === 5232);
 

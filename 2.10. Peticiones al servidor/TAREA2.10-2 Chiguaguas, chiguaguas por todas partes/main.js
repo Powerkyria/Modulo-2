@@ -1,5 +1,7 @@
 'use strict';
 
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_10_peticiones_al_servidor#ejercicio-2
+
 function getDogImage() {
   fetch("https://dog.ceo/api/breed/chihuahua/images/random")
     .then(response => response.json())

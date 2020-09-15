@@ -1,34 +1,32 @@
 'use strict';
 
-// Usando la herramienta loupe que se utiliza en el video (ver el vídeo), realizar en JavaScript las siguientes tareas para ver en qué orden se reproducen:
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_14_asincronia#ejercicio-8
 
 // TAREAS A
 
-// Crear una función funA que contenga un console.log('hola')
+// 1.
 
 const funA = () => {
 	console.log('hola');
 };
 
-// Crear otra función funB que ejecute funA
+// 2.
 
 const funB = () => {
 	funA();
 };
 
-// Ejecutar la función funB
+// 3.
 
 funB();
 
 // RESPUESTA : Se reproducen de abajo hacia arriba, funB llama a funA y esta dice 'hola'.
 
-/*************************************************************************************/
+/*********************************************/
 
 // TAREAS B
 
-// En un if comprobar si "Hello" y "hello" son iguales
-// Si lo son, ejecutar un console.log que diga "lo son"
-// Si no lo son, ejecutar un console.log que diga "no lo son"
+// 1. 2 .3.
 
 if ('Hello' === 'hello') {
 	console.log('lo son');
@@ -38,13 +36,11 @@ if ('Hello' === 'hello') {
 
 // RESPUESTA: No lo son.
 
-/***************************************************************************************/
+/***********************************************/
 
 // TAREAS C
 
-// Crear una función pulsado() que guarde en una variable el texto "pulsado" y luego muestre esa variable con un console.log
-// Crear un botón que llame a la función anterior. Podemos editar el HTML en el panel inferior izquierdo. Usaremos una sintaxis propia del programa en lugar de addEventListener: $.on("button", "click", pulsado);
-// Añadir un console.log al final que muestre el texto "empezamos"
+// 1.
 
 const button = document.querySelector('button');
 
@@ -53,7 +49,11 @@ function pulsado() {
 	console.log(text);
 }
 
+// 2.
+
 button.addEventListener('click', pulsado);
+
+// 3.
 
 console.log('empezamos');
 

@@ -1,6 +1,6 @@
 'use strict';
 
-// Con JavaScript, crear un código para mostrar una ventana en nuestro navegador una vez transcurridos 15 segundos que ponga "su sesión ha expirado" (creada usando HTML y CSS).
+// https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_14_asincronia#ejercicio-4
 
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
