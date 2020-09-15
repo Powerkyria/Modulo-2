@@ -8,31 +8,31 @@
 // Creamos variable tree vacía
 // por cada vuelta le añadimos un triángulo al arbol
 
-let triangle = '▲';
-let tree = '';
+// let triangle = '▲';
+// let tree = '';
 
-function drawTree(height) {
-	for (let i = 0; i < height; i++) {
-		tree += triangle;
+// function drawTree(height) {
+// 	for (let i = 0; i < height; i++) {
+// 		tree += triangle;
 
-		console.log(tree);
-	}
-}
+// 		console.log(tree);
+// 	}
+// }
 
-drawTree(5);
+// drawTree(5);
 
 // PINTADO EN PANTALLA, EJERCICIO CONSULTADO Y RETOCADO A MI GUSTO:
 
-// let tree = '';
-// let triangle = '▲';
+let tree = '';
+let triangle = '▲';
 
-// function makeTree(heigth) {
-// 	for (let i = 0; i < heigth; i++) {
-// 		let newParagraph = document.createElement('p');
+function makeTree(heigth) {
+	for (let i = 0; i < heigth; i++) {
+		let newParagraph = document.createElement('p');
 
-// 		newParagraph.innerText = tree += triangle;
+		newParagraph.innerText = tree += triangle;
 
-// 		document.body.appendChild(newParagraph);
-// 	}
-// }
-// makeTree(5);
+		document.body.appendChild(newParagraph);
+	}
+}
+makeTree(5);
