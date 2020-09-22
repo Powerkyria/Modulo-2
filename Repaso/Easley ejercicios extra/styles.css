@@ -1,0 +1,82 @@
+body {
+	background: #fffdfa;
+	color: #332100;
+	margin: 0;
+}
+
+.news, .visible {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	grid-gap: 20px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 40px;
+	width: 640px;
+}
+
+.news__item {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	background: #fff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.news__title {
+	font-size: 16px;
+}
+
+.news__image {
+	display: block;
+	width: 100%;
+}
+
+.news__item--from-mars {
+	border-color: #bc2731;
+	box-shadow: 0 1px 4px rgba(188, 39, 49, 0.6);
+}
+
+.news__item--from-mars .news__title {
+	color: #bc2731;
+}
+
+.news__item--from-mars .news__image {
+	box-shadow: 0 0 0 3px rgba(188, 39, 49, 0.8);
+	border-radius: 5px;
+}
+
+.news__item--no-image-visible .news__image {
+	display: none;
+}
+
+.color__item {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+}
+
+.div__wrapper, .div__wrapper2 {
+	text-align: center;
+}
+
+h3 {
+	font-family: sans-serif serif;
+	font-size: 24px;
+	margin-left: 0;
+}
+
+.mark{
+	
+	border: 5px solid #ff0000;
+}
+
+.hidden{
+	/* display: none; */
+	visibility: hidden;
+	opacity: 0;
+	order: 1;
+}
+
+input{
+	margin-left: 110px;
+}
